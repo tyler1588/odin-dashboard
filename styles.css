@@ -9,10 +9,10 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-/* 
+
 div {
     outline-style: solid;   
-} */
+}
 
 
 h1, h2, h3, h4, h5, h6, p {
@@ -48,11 +48,10 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--dark-blue);
     grid-row: 2/7;
     grid-column: 2/7;
+    gap: 1rem;
     padding: 1rem;
     display: flex;
-    flex-direction: column;
 }
-
 
 .projects {
     height: 100%;
@@ -60,7 +59,6 @@ h1, h2, h3, h4, h5, h6, p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding-top: 1rem;
 }
 
 .project {
@@ -68,6 +66,20 @@ h1, h2, h3, h4, h5, h6, p {
     height: 100%;
     background-color: white;
     border-radius: 10px;
+}
+
+.announcements {
+    height: 100%;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+}
+
+.announcement {
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
 .nav-item {
@@ -147,7 +159,6 @@ form {
 .notification-section > h1 {
     font-size: 1rem;
 }
-
 
 img {
     height: 2.5rem;
