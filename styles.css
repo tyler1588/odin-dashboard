@@ -10,9 +10,9 @@ body {
     margin: 0;
 }
 
-/* div {
+div {
     outline-style: solid;   
-} */
+}
 
 
 h1, h2, h3, h4, h5, h6, p {
@@ -61,7 +61,8 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 1rem;
 }
 
-.project {
+.project {  
+    box-sizing: border-box; 
     width: 100%;
     height: 100%;
     background-color: white;
@@ -71,14 +72,35 @@ h1, h2, h3, h4, h5, h6, p {
     border-color: orange;
 }
 
-.announcements {
+.right-side {
     height: 100%;
     width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.announcements {
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
 }
 
 .announcement {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.trending {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.trend-item {
     width: 100%;
     height: 100%;
     background-color: white;
