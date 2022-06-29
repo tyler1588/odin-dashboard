@@ -2,6 +2,7 @@
     --dark-blue: #06283D;
     --main-blue: #1363DF;
     --light-blue: #47B5FF;
+    --grey: rgb(216, 224, 226);
 }
 
 body {
@@ -10,9 +11,9 @@ body {
     margin: 0;
 }
 
-div {
+/* div {
     outline-style: solid;   
-}
+} */
 
 
 h1, h2, h3, h4, h5, h6, p {
@@ -44,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .main {
-    background-color: lightgrey;
+    background-color: var(--grey);
     color: var(--dark-blue);
     grid-row: 2/7;
     grid-column: 2/7;
@@ -53,7 +54,16 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
 }
 
+.left-side {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .projects {
+    margin-top: 0.5rem;
     height: 100%;
     width: 100%;
     display: grid;
@@ -75,16 +85,19 @@ h1, h2, h3, h4, h5, h6, p {
 .right-side {
     height: 100%;
     width: 30%;
-    display: grid;
-    grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .announcements {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .announcement {
@@ -94,10 +107,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .trending {
+    margin-top: 0.5rem;
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .trend-item {
